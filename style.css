@@ -1,0 +1,86 @@
+body {
+    background: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.player-container {
+    background: #333;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.song-info {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.controls button {
+    background: #444;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.controls button:hover {
+    background: #555;
+}
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#progress {
+    flex: 1;
+}
+.volume-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.playlist-container {
+    background: #222;
+    border-radius: 10px;
+    padding: 10px;
+    max-height: 120px;
+    overflow-y: auto;
+}
+.playlist-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.playlist-container li {
+    padding: 5px 0;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.playlist-container li.active {
+    color: #1db954;
+    font-weight: bold;
+}
+.playlist-container li:hover {
+    color: #1db954;
+}
+.autoplay-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
